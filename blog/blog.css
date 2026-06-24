@@ -1,0 +1,135 @@
+/* Blog Article Styles */
+.blog-article {
+    padding: 180px 0 80px;
+}
+
+.article-header {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 64px;
+}
+
+.article-tag {
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.article-header h1 {
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    font-weight: 800;
+    margin-bottom: 16px;
+    line-height: 1.1;
+}
+
+.article-meta {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 300;
+}
+
+.article-content {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.article-intro {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 48px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid var(--border);
+}
+
+.article-content h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 48px 0 16px;
+    color: var(--text-primary);
+}
+
+.article-content h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 32px 0 12px;
+    color: var(--text-primary);
+}
+
+.article-content p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.85;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.article-content ul,
+.article-content ol {
+    padding-left: 24px;
+    margin-bottom: 24px;
+}
+
+.article-content li {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.article-content li strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.article-content strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.article-cta {
+    margin-top: 64px;
+    padding: 48px 40px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    text-align: center;
+}
+
+.article-cta h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.article-cta p {
+    color: var(--text-secondary);
+    margin-bottom: 28px;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .blog-article {
+        padding: 140px 0 60px;
+    }
+
+    .article-header {
+        margin-bottom: 40px;
+    }
+
+    .article-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .article-cta {
+        padding: 32px 24px;
+    }
+}

@@ -1,0 +1,194 @@
+/* Reputation Management — Premium black/white with gold hints */
+.reputation-page {
+    --accent: #c69b30;
+    --accent-light: #d4a835;
+    --accent-dim: rgba(198, 155, 48, 0.06);
+    --accent-glow: rgba(198, 155, 48, 0.1);
+    --border-accent: rgba(198, 155, 48, 0.15);
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0a0;
+}
+
+.reputation-page .hero-location {
+    color: #ffffff;
+    letter-spacing: 6px;
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+
+.reputation-page .hero h1 {
+    color: #ffffff;
+}
+
+.reputation-page .hero-trust {
+    color: #666666;
+}
+
+.reputation-page .card {
+    background: #080808;
+    border-color: rgba(255, 255, 255, 0.04);
+}
+
+.reputation-page .card:hover {
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.reputation-page .card:hover::before {
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+}
+
+.reputation-page .card h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    margin-bottom: 14px;
+}
+
+/* Process Steps */
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 56px;
+}
+
+.process-step {
+    text-align: left;
+    padding: 40px 32px;
+    background: #080808;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+}
+
+.process-step:hover {
+    border-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+}
+
+.process-number {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.process-step h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.process-step p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+/* Reputation Stats */
+.rep-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.rep-stat {
+    padding: 48px 24px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 16px;
+    background: #080808;
+    transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.rep-stat:hover {
+    border-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-4px);
+}
+
+.rep-stat-number {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+}
+
+.rep-stat p {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* Override buttons on this page for more premium feel */
+.reputation-page .btn-primary {
+    background: #ffffff;
+    color: #000000;
+    box-shadow: none;
+}
+
+.reputation-page .btn-primary:hover {
+    background: var(--accent);
+    color: #000000;
+    box-shadow: 0 12px 40px rgba(198, 155, 48, 0.2);
+}
+
+.reputation-page .btn-primary::after {
+    background: linear-gradient(90deg, transparent, rgba(0,0,0,0.05), transparent);
+}
+
+/* Contact form overrides */
+.reputation-page .contact-form-wrapper {
+    background: #080808;
+    border-color: rgba(255, 255, 255, 0.04);
+}
+
+.reputation-page .form-group input,
+.reputation-page .form-group select,
+.reputation-page .form-group textarea {
+    background: #000000;
+    border-color: rgba(255, 255, 255, 0.06);
+}
+
+.reputation-page .form-group input:focus,
+.reputation-page .form-group select:focus,
+.reputation-page .form-group textarea:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .process-grid,
+    .rep-stats-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .process-step {
+        padding: 28px 24px;
+    }
+
+    .process-number {
+        font-size: 2rem;
+    }
+
+    .rep-stat-number {
+        font-size: 2.4rem;
+    }
+}
