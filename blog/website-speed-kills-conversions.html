@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Website Speed Kills Your Conversions and Rankings | IINES Blog</title>
+    <meta name="description" content="A 1-second delay in page load costs 7% in conversions. Here's the data on how website speed affects your revenue, Google rankings, and customer trust.">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="../index.html" class="logo">IINES<span class="logo-dot">.</span></a>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../pricing.html">Pricing</a>
+                <a href="../reputation-management.html">Reputation</a>
+                <a href="index.html">Blog</a>
+                <a href="../contact.html">Contact</a>
+            </div>
+            <button class="mobile-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <article class="blog-article">
+        <div class="container">
+            <div class="article-header">
+                <span class="article-tag">Web Performance</span>
+                <h1>How Website Speed Kills Your Conversions and Rankings</h1>
+                <p class="article-meta">6 min read</p>
+            </div>
+
+            <div class="article-content">
+                <p class="article-intro">Your website might look beautiful. The copy might be perfect. But if it takes more than 3 seconds to load, you're losing customers before they even see it. Here's exactly how much a slow site is costing you.</p>
+
+                <h2>The numbers that should scare you</h2>
+                <p>This isn't opinion. This is data from Google, Amazon, and Deloitte:</p>
+                <ul>
+                    <li><strong>1 second delay</strong> = 7% reduction in conversions (Kissmetrics)</li>
+                    <li><strong>53% of mobile users</strong> leave a site that takes longer than 3 seconds to load (Google)</li>
+                    <li><strong>Amazon calculated</strong> that every 100ms of latency cost them 1% in sales</li>
+                    <li><strong>A 0.1s improvement</strong> in load time increased conversion rates by 8% for retail sites (Deloitte, 2020)</li>
+                    <li><strong>79% of shoppers</strong> who experience poor site performance say they won't return (Akamai)</li>
+                </ul>
+                <p>For a business generating £10,000/month from their website, a 1-second slower load time could mean £700/month in lost revenue. That's £8,400 per year — gone, because your site is too slow.</p>
+
+                <h2>How speed affects your Google rankings</h2>
+                <p>Since 2021, Google has used Core Web Vitals as a direct ranking factor. These measure three things:</p>
+
+                <h3>Largest Contentful Paint (LCP)</h3>
+                <p>How quickly the main content loads. Google wants this under 2.5 seconds. If yours is above 4 seconds, you're being penalised in rankings.</p>
+
+                <h3>First Input Delay (FID) / Interaction to Next Paint (INP)</h3>
+                <p>How quickly your site responds when someone clicks or taps. If there's a noticeable lag between click and response, Google notices — and so do your users.</p>
+
+                <h3>Cumulative Layout Shift (CLS)</h3>
+                <p>Whether elements jump around while the page loads. You know that frustrating experience where you try to click a button and the page shifts, so you click an ad instead? That's CLS. Google penalises it.</p>
+
+                <p>If your Core Web Vitals are poor, you're not just losing visitors to impatience — you're actively being pushed down in Google's results. Your competitors with faster sites get shown above you, even if their content is worse.</p>
+
+                <h2>Speed and AI search</h2>
+                <p>Here's something most people don't consider: <a href="what-is-ai-seo.html">AI search engines</a> like Google's AI Overviews preferentially cite content from fast, well-structured sites. When Google generates an AI Overview, it pulls from pages it considers high-quality — and site speed is one of those quality signals.</p>
+                <p>A slow site doesn't just lose you traditional rankings. It makes you less likely to appear in <a href="zero-click-search-b2b.html">the AI-generated answers</a> that are increasingly replacing those rankings.</p>
+
+                <h2>What makes websites slow?</h2>
+                <p>The most common culprits:</p>
+
+                <h3>1. Unoptimised images</h3>
+                <p>A single hero image can be 5MB if not compressed. That alone adds 3-5 seconds on a mobile connection. Every image should be compressed, properly sized, and served in modern formats (WebP or AVIF).</p>
+
+                <h3>2. Too many scripts and plugins</h3>
+                <p>Every WordPress plugin, every analytics script, every chatbot widget adds weight. We've audited sites with 40+ scripts loading on every page. Each one blocks rendering and adds latency.</p>
+
+                <h3>3. Cheap hosting</h3>
+                <p>Shared hosting (the £3/month plans) puts your site on a server with hundreds of others. When traffic spikes on any of those sites, yours slows down. Enterprise-grade hosting or modern platforms like Vercel serve from global CDNs with sub-100ms response times.</p>
+
+                <h3>4. No caching strategy</h3>
+                <p>Without proper caching, your server rebuilds every page from scratch for every visitor. With caching, returning visitors (and often first-time visitors) get near-instant loads.</p>
+
+                <h3>5. Render-blocking resources</h3>
+                <p>CSS and JavaScript files that load in the wrong order can block the page from appearing until everything downloads. Proper resource prioritisation can shave 1-2 seconds off load times.</p>
+
+                <h2>The mobile factor</h2>
+                <p>Over 60% of web traffic is now mobile. Mobile connections are slower, screens are smaller, and patience is shorter. Google uses mobile-first indexing, meaning your mobile site speed is what determines your rankings — even for desktop searchers.</p>
+                <p>If your site loads in 2 seconds on desktop but 6 seconds on mobile, Google sees you as a 6-second site. Most businesses have never actually tested their mobile load times.</p>
+
+                <h2>How to check your speed</h2>
+                <p>Two free tools:</p>
+                <ol>
+                    <li><strong>Google PageSpeed Insights</strong> (pagespeed.web.dev) — enter your URL and get scores for mobile and desktop, plus specific recommendations</li>
+                    <li><strong>GTmetrix</strong> (gtmetrix.com) — more detailed waterfall analysis showing exactly what's loading and how long each element takes</li>
+                </ol>
+                <p>If your mobile score is below 50 on PageSpeed Insights, you have serious work to do. Below 30 means you're actively haemorrhaging visitors.</p>
+
+                <h2>What good looks like</h2>
+                <p>For reference, here's what a well-optimised business website should achieve:</p>
+                <ul>
+                    <li><strong>Load time:</strong> Under 2 seconds on mobile</li>
+                    <li><strong>PageSpeed score:</strong> 90+ on mobile, 95+ on desktop</li>
+                    <li><strong>LCP:</strong> Under 2.5 seconds</li>
+                    <li><strong>CLS:</strong> Under 0.1</li>
+                    <li><strong>INP:</strong> Under 200ms</li>
+                </ul>
+                <p>The <a href="../index.html">websites we build at IINES</a> are engineered to hit these numbers from day one. Static architecture, global CDN, optimised assets, zero bloat. Because if your website can't pass these benchmarks, everything else you do — SEO, content, ads — is undermined by the foundation.</p>
+
+                <h2>Speed is a competitive advantage</h2>
+                <p>Most of your competitors have slow websites. They're built on WordPress with 30 plugins, hosted on shared servers, loaded with uncompressed images. If your site loads in 1.5 seconds while theirs loads in 5, you win on every metric that matters: rankings, conversions, user experience, and ultimately revenue.</p>
+                <p>In a market where <a href="why-businesses-fail-first-year.html">60% of businesses fail in their first 3 years</a>, the margins matter. A fast website won't save a bad business, but a slow website can absolutely kill a good one.</p>
+
+                <h2>Related reading</h2>
+                <ul>
+                    <li><a href="why-businesses-fail-first-year.html">Why 60% of Businesses Fail — It's Not Your Product, It's Your Visibility</a></li>
+                    <li><a href="what-is-ai-seo.html">What Is AI SEO (And Why Traditional SEO Is Dying)</a></li>
+                    <li><a href="zero-click-search-b2b.html">Why Zero-Click Search Changes Everything for B2B</a></li>
+                </ul>
+
+                <div class="article-cta">
+                    <h3>Is your website fast enough?</h3>
+                    <p>Our <a href="../pricing.html">Visibility Audit</a> includes a full Core Web Vitals breakdown with specific recommendations. Or start fresh with a <a href="../contact.html">free landing page</a> built for speed from the ground up.</p>
+                    <a href="../pricing.html" class="btn btn-primary btn-lg">VIEW PRICING</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="logo">IINES<span class="logo-dot">.</span></h3>
+                    <p>Enterprise Web Development & AI SEO Agency</p>
+                    <p class="footer-meta">IINES Ltd | Founded 2024 | London, UK</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 IINES Ltd. All rights reserved &nbsp;|&nbsp; <a href="../privacy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
