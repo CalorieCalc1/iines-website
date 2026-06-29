@@ -18,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="styles.css" as="style">
     <link rel="preload" href="script.js" as="script">
+    <style>*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Inter',sans-serif;background:#000;color:#f5f5f5;overflow-x:hidden}.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:24px 0;background:rgba(0,0,0,.7);backdrop-filter:blur(24px)}.container{max-width:1240px;margin:0 auto;padding:0 48px}.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center}</style>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script type="application/ld+json">
@@ -50,13 +51,13 @@
 <body>
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="logo">IINES<span class="logo-dot">.</span></a>
+            <a href="/" class="logo">IINES<span class="logo-dot">.</span></a>
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="pricing.html">Pricing</a>
-                <a href="reputation-management.html">Reputation</a>
-                <a href="blog/index.html">Blog</a>
-                <a href="contact.html">Contact</a>
+                <a href="/">Home</a>
+                <a href="/pricing">Pricing</a>
+                <a href="/reputation-management">Reputation</a>
+                <a href="/blog">Blog</a>
+                <a href="/contact">Contact</a>
             </div>
             <button class="mobile-toggle" aria-label="Toggle menu">
                 <span></span>
@@ -200,8 +201,8 @@
         <div class="container text-center">
             <h2>SEO & AI Visibility Isn't <em>Optional</em> Anymore</h2>
             <div class="cta-buttons">
-                <a href="pricing.html" class="btn btn-primary btn-lg">View Our Pricing</a>
-                <a href="blog/index.html" class="btn btn-outline btn-lg">Read Our Blog</a>
+                <a href="/pricing" class="btn btn-primary btn-lg">View Our Pricing</a>
+                <a href="/blog" class="btn btn-outline btn-lg">Read Our Blog</a>
             </div>
         </div>
     </section>
@@ -278,7 +279,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 IINES Ltd. All rights reserved &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+                <p>&copy; 2026 IINES Ltd. All rights reserved &nbsp;|&nbsp; <a href="/privacy">Privacy Policy</a></p>
             </div>
         </div>
     </footer>
@@ -290,6 +291,6 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
