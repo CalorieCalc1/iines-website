@@ -71,7 +71,7 @@ document.querySelectorAll('.contact-form').forEach(form => {
         btn.disabled = true;
 
         const formData = new FormData(form);
-        formData.append('access_key', '837d9a75-73a2-4747-b102-f6ed69568e9f');
+        formData.append('access_key', '1e3bebd6-21b5-403b-ae3d-35b17313ebf8');
 
         try {
             const res = await fetch('https://api.web3forms.com/submit', {
