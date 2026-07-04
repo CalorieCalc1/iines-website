@@ -1096,12 +1096,14 @@ a:hover {
     }
 
     .hero {
-        padding: 130px 0 60px;
-        min-height: auto;
+        padding: 120px 0 40px;
+        min-height: 100vh;
+        min-height: 100dvh;
     }
 
     .hero h1 {
-        font-size: 2.8rem;
+        font-size: clamp(3rem, 12vw, 4.5rem);
+        line-height: 1.05;
     }
 
     .hero-subtitle {
@@ -1253,11 +1255,14 @@ a:hover {
     }
 
     .hero h1 {
-        font-size: 2.2rem;
+        font-size: clamp(2.8rem, 11vw, 3.8rem);
+        line-height: 1.05;
     }
 
     .hero {
-        padding: 120px 0 48px;
+        padding: 110px 0 40px;
+        min-height: 100vh;
+        min-height: 100dvh;
     }
 
     .section h2 {
