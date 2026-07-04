@@ -236,38 +236,169 @@
     background: var(--accent);
 }
 
-/* Responsive */
+/* Responsive - Tablet */
+@media (max-width: 1024px) {
+    .reputation-page .pricing-grid {
+        grid-template-columns: 1fr 1fr;
+        max-width: 640px;
+    }
+
+    .reputation-page .pricing-card:last-child {
+        grid-column: 1 / -1;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .process-grid {
+        gap: 20px;
+    }
+}
+
+/* Responsive - Mobile */
 @media (max-width: 768px) {
+    .reputation-page .hero {
+        padding: 100px 0 60px;
+    }
+
+    .reputation-page .hero h1 {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    .reputation-page .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .reputation-page .section {
+        padding: 48px 0;
+    }
+
+    .reputation-page h2 {
+        font-size: clamp(1.5rem, 6vw, 2.2rem);
+    }
+
     .process-grid,
     .rep-stats-grid {
         grid-template-columns: 1fr;
-        gap: 16px;
+        gap: 12px;
     }
 
     .process-step {
-        padding: 28px 24px;
+        padding: 24px 20px;
     }
 
     .process-number {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+
+    .process-step h3 {
+        font-size: 0.95rem;
+    }
+
+    .process-step p {
+        font-size: 0.82rem;
+    }
+
+    .rep-stat {
+        padding: 32px 20px;
     }
 
     .rep-stat-number {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
+        margin-bottom: 8px;
+    }
+
+    .rep-stat p {
+        font-size: 0.8rem;
     }
 
     .reputation-page .pricing-grid {
         grid-template-columns: 1fr;
-        max-width: 380px;
-        margin-left: auto;
-        margin-right: auto;
+        max-width: 100%;
+        gap: 16px;
+    }
+
+    .reputation-page .pricing-card:last-child {
+        grid-column: auto;
+        max-width: none;
     }
 
     .reputation-page .pricing-card {
-        padding: 28px 22px;
+        padding: 24px 20px;
+    }
+
+    .reputation-page .pricing-card-header h3 {
+        font-size: 1rem;
     }
 
     .reputation-page .price-amount {
-        font-size: 1.7rem;
+        font-size: 1.6rem;
+    }
+
+    .reputation-page .pricing-desc {
+        font-size: 0.8rem;
+    }
+
+    .reputation-page .pricing-features li {
+        font-size: 0.78rem;
+        padding-bottom: 8px;
+    }
+
+    .reputation-page .card-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .reputation-page .card {
+        padding: 24px 20px;
+    }
+
+    .reputation-page .card h3 {
+        font-size: 0.75rem;
+    }
+
+    .reputation-page .card p {
+        font-size: 0.82rem;
+    }
+
+    .reputation-page .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .reputation-page .section-text {
+        font-size: 0.85rem;
+    }
+
+    .reputation-page .btn-lg {
+        font-size: 0.7rem;
+        padding: 16px 28px;
+    }
+}
+
+/* Responsive - Small mobile */
+@media (max-width: 420px) {
+    .reputation-page .hero {
+        padding: 80px 0 48px;
+    }
+
+    .reputation-page .pricing-card {
+        padding: 20px 16px;
+    }
+
+    .reputation-page .price-amount {
+        font-size: 1.4rem;
+    }
+
+    .process-step {
+        padding: 20px 16px;
+    }
+
+    .rep-stat {
+        padding: 24px 16px;
+    }
+
+    .rep-stat-number {
+        font-size: 1.8rem;
     }
 }
