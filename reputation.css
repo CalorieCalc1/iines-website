@@ -172,6 +172,65 @@
     box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.05);
 }
 
+/* Reputation pricing cards */
+.reputation-page .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.reputation-page .pricing-card {
+    background: #080808;
+    border-color: rgba(255, 255, 255, 0.04);
+    padding: 36px 28px;
+    text-align: left;
+}
+
+.reputation-page .pricing-card:hover {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.reputation-page .pricing-card-featured {
+    border-color: rgba(255, 255, 255, 0.12);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, #080808 100%);
+}
+
+.reputation-page .pricing-card-header {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.reputation-page .pricing-card-header h3 {
+    font-size: 1.15rem;
+    margin-bottom: 16px;
+}
+
+.reputation-page .price-amount {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.reputation-page .pricing-card-featured .price-amount {
+    color: var(--accent);
+}
+
+.reputation-page .pricing-desc {
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+.reputation-page .pricing-features li {
+    font-size: 0.82rem;
+    padding-bottom: 10px;
+}
+
+.reputation-page .pricing-features li::before {
+    background: #ffffff;
+}
+
+.reputation-page .pricing-card-featured .pricing-features li::before {
+    background: var(--accent);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .process-grid,
@@ -190,5 +249,20 @@
 
     .rep-stat-number {
         font-size: 2.4rem;
+    }
+
+    .reputation-page .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .reputation-page .pricing-card {
+        padding: 28px 22px;
+    }
+
+    .reputation-page .price-amount {
+        font-size: 1.7rem;
     }
 }
