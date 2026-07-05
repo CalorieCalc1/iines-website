@@ -20,13 +20,19 @@ const WHATSAPP_ENABLED = false;
 // Re-scroll to hash target after fonts/animations settle (fixes cross-page anchor jumps)
 (function fixHashScroll() {
     if (!window.location.hash) return;
-    const scrollToHash = () => {
-        const el = document.querySelector(window.location.hash);
-        if (el) el.scrollIntoView({ behavior: 'auto', block: 'start' });
+    let target;
+    try { target = document.querySelector(window.location.hash); } catch (e) { return; }
+    if (!target) return;
+    const jump = () => {
+        const prev = document.documentElement.style.scrollBehavior;
+        document.documentElement.style.scrollBehavior = 'auto';
+        const y = target.getBoundingClientRect().top + window.pageYOffset - 80;
+        window.scrollTo(0, y);
+        document.documentElement.style.scrollBehavior = prev;
     };
     window.addEventListener('load', () => {
-        scrollToHash();
-        setTimeout(scrollToHash, 250);
+        jump();
+        [100, 300, 600].forEach(t => setTimeout(jump, t));
     });
 })();
 
