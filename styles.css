@@ -700,6 +700,17 @@ a:hover {
     transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
+.founder-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    display: block;
+    border: 2px solid var(--accent);
+    box-shadow: 0 8px 32px rgba(198, 155, 48, 0.15);
+}
+
 .founder-card:hover {
     border-color: var(--border-accent);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
@@ -1397,6 +1408,11 @@ a:hover {
 
     .founder-card {
         padding: 32px 24px;
+    }
+
+    .founder-photo {
+        width: 100px;
+        height: 100px;
     }
 
     .contact-info h2 {
