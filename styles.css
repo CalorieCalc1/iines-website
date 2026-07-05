@@ -3,6 +3,7 @@
     --bg-secondary: #060606;
     --bg-card: #0e0e0e;
     --bg-card-hover: #151515;
+    --whatsapp: #25d366;
     --accent: #c69b30;
     --accent-light: #d4a835;
     --accent-dim: rgba(200, 168, 76, 0.08);
@@ -1515,4 +1516,64 @@ a:hover {
 .sticky-cta-text strong {
     color: var(--text-primary);
     font-weight: 600;
+}
+
+/* ═══════════════════════════════════════
+   WHATSAPP FLOATING BUTTON
+   ═══════════════════════════════════════ */
+.whatsapp-float {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 56px;
+    height: 56px;
+    background: var(--whatsapp);
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    animation: whatsappPulse 2.5s ease-in-out infinite;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 28px rgba(37, 211, 102, 0.55);
+}
+
+@keyframes whatsappPulse {
+    0%, 100% { box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4); }
+    50% { box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4), 0 0 0 10px rgba(37, 211, 102, 0); }
+}
+
+.btn-whatsapp {
+    background: var(--whatsapp);
+    color: #ffffff;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-whatsapp:hover {
+    background: #1eb855;
+    color: #ffffff;
+}
+
+.btn-whatsapp svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 18px;
+        right: 18px;
+        width: 52px;
+        height: 52px;
+    }
 }
