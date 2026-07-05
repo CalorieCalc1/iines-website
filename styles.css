@@ -400,14 +400,6 @@ a:hover {
     font-weight: 300;
 }
 
-.card-highlight {
-    border-color: var(--border);
-}
-
-.card-highlight:hover {
-    border-color: var(--border-accent);
-}
-
 /* ═══════════════════════════════════════
    STATS
    ═══════════════════════════════════════ */
