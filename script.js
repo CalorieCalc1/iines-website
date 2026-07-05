@@ -17,6 +17,19 @@ const WHATSAPP_ENABLED = false;
     document.body.appendChild(a);
 })();
 
+// Re-scroll to hash target after fonts/animations settle (fixes cross-page anchor jumps)
+(function fixHashScroll() {
+    if (!window.location.hash) return;
+    const scrollToHash = () => {
+        const el = document.querySelector(window.location.hash);
+        if (el) el.scrollIntoView({ behavior: 'auto', block: 'start' });
+    };
+    window.addEventListener('load', () => {
+        scrollToHash();
+        setTimeout(scrollToHash, 250);
+    });
+})();
+
 // Sticky CTA bar
 const stickyCta = document.getElementById('sticky-cta');
 if (stickyCta) {
