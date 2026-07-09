@@ -1,8 +1,6 @@
 // WhatsApp link - REPLACE with your wa.me link once the number is live
-// Format: https://wa.me/447XXXXXXXXX (no plus, no spaces)
-const WHATSAPP_LINK = 'https://wa.me/447000000000';
-// Set to true once the number is live to show the WhatsApp buttons
-const WHATSAPP_ENABLED = false;
+const WHATSAPP_LINK = 'https://wa.me/message/H4NA3ABSAN3AK1';
+const WHATSAPP_ENABLED = true;
 
 // Floating WhatsApp button (site-wide)
 (function injectWhatsApp() {
