@@ -1020,6 +1020,9 @@ a:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
+.pricing-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
 
 .pricing-card {
     background: var(--bg-card);
@@ -1431,6 +1434,16 @@ a:hover {
         grid-column: 1 / -1;
         max-width: 480px;
         margin: 0 auto;
+    }
+
+    .pricing-grid-4 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pricing-grid-4 .pricing-card:last-child {
+        grid-column: auto;
+        max-width: none;
+        margin: 0;
     }
 
     .pricing-card-featured {
