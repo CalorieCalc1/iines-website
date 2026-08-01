@@ -904,9 +904,9 @@ a:hover {
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 48px;
     margin-bottom: 48px;
 }
 
@@ -920,6 +920,41 @@ a:hover {
     color: var(--text-secondary);
     font-size: 0.85rem;
     font-weight: 300;
+}
+
+.footer-brand .social-link {
+    margin-top: 20px;
+}
+
+.footer-links h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 300;
+    transition: color var(--transition);
+}
+
+.footer-links a:hover {
+    color: var(--accent);
 }
 
 .footer-meta {
@@ -1614,8 +1649,8 @@ a:hover {
 
     /* Footer mobile */
     .footer-content {
-        flex-direction: column;
-        gap: 24px;
+        grid-template-columns: 1fr;
+        gap: 32px;
     }
 
     .footer-bottom p {
