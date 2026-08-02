@@ -833,6 +833,46 @@ a:hover {
     letter-spacing: 0.3px;
 }
 
+.how-it-works {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin: 28px 0;
+    padding: 24px 28px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+}
+
+.how-it-works-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.how-it-works-number {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--accent);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    line-height: 1.5;
+}
+
+.how-it-works-text {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    font-weight: 300;
+    line-height: 1.5;
+    padding-top: 2px;
+}
+
+.how-it-works-note {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    letter-spacing: 0.3px;
+    margin-top: 2px;
+}
+
 /* ═══════════════════════════════════════
    FORM
    ═══════════════════════════════════════ */
@@ -1649,6 +1689,10 @@ a:hover {
 
     .contact-form-wrapper {
         padding: 24px 20px;
+    }
+
+    .how-it-works {
+        padding: 20px;
     }
 
     .contact-stat {
