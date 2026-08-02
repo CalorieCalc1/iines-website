@@ -1119,12 +1119,6 @@ a:hover {
     border-bottom: 1px solid var(--border);
 }
 
-.pricing-icon {
-    font-size: 1.5rem;
-    display: block;
-    margin-bottom: 16px;
-}
-
 .pricing-card-header h3 {
     font-size: 1.3rem;
     margin-bottom: 20px;
@@ -1911,11 +1905,6 @@ a:hover {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.fade-in {
-    animation: fadeInUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
-    opacity: 0;
 }
 
 .reveal {
