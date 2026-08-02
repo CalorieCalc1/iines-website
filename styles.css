@@ -1169,8 +1169,7 @@ a:hover {
 
 .pricing-features {
     list-style: none;
-    margin-bottom: 36px;
-    flex-grow: 1;
+    margin-bottom: 24px;
 }
 
 .pricing-features li {
@@ -1192,6 +1191,35 @@ a:hover {
     height: 6px;
     border-radius: 50%;
     background: var(--accent);
+}
+
+.pricing-best-for {
+    background: var(--accent-dim);
+    border: 1px solid var(--border-accent);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    margin-bottom: 24px;
+}
+
+.pricing-best-for-label {
+    display: block;
+    color: var(--accent);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.pricing-best-for p {
+    color: var(--text-secondary);
+    font-size: 0.82rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.pricing-card > .btn {
+    margin-top: auto;
 }
 
 /* ═══════════════════════════════════════
@@ -1771,12 +1799,21 @@ a:hover {
     }
 
     .pricing-features {
-        margin-bottom: 20px;
+        margin-bottom: 16px;
     }
 
     .pricing-features li {
         font-size: 0.8rem;
         padding-bottom: 10px;
+    }
+
+    .pricing-best-for {
+        padding: 12px 14px;
+        margin-bottom: 20px;
+    }
+
+    .pricing-best-for p {
+        font-size: 0.8rem;
     }
 
     .pricing-card-featured {
