@@ -182,6 +182,67 @@
     color: #ffffff;
 }
 
+/* Reputation audit callout */
+.reputation-page .rep-audit-callout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    max-width: 960px;
+    margin: 40px auto 0;
+    padding: 28px 32px;
+    background: #080808;
+    border: 1px solid var(--border-accent);
+    border-radius: 16px;
+    text-align: left;
+}
+
+.reputation-page .rep-audit-callout-label {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--accent);
+    margin-bottom: 8px;
+}
+
+.reputation-page .rep-audit-callout-text h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.reputation-page .rep-audit-callout-text p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-weight: 300;
+    max-width: 640px;
+}
+
+.reputation-page .rep-audit-callout-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.reputation-page .rep-audit-callout-price {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.reputation-page .rep-audit-callout .btn {
+    white-space: nowrap;
+}
+
 /* Reputation pricing cards */
 .reputation-page .pricing-grid {
     display: grid;
@@ -320,6 +381,21 @@
 
     .rep-stat p {
         font-size: 0.8rem;
+    }
+
+    .reputation-page .rep-audit-callout {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 24px 20px;
+        margin-top: 24px;
+    }
+
+    .reputation-page .rep-audit-callout-action {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
 
     .reputation-page .pricing-grid {
