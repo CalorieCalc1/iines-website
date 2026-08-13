@@ -1065,7 +1065,7 @@ a:hover {
 }
 
 .pricing-card {
-    background: var(--bg-card);
+    background: radial-gradient(circle at 15% 0%, rgba(200, 168, 76, 0.06), transparent 55%), var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius-xl);
     padding: 44px 32px;
@@ -1074,6 +1074,25 @@ a:hover {
     transition: all var(--transition);
     position: relative;
     overflow: hidden;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+}
+
+.pricing-card-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200, 168, 76, 0.16), rgba(200, 168, 76, 0.03));
+    border: 1px solid var(--border-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: var(--accent);
+}
+
+.pricing-card-icon svg {
+    width: 24px;
+    height: 24px;
 }
 
 .pricing-card::before {
@@ -1100,12 +1119,27 @@ a:hover {
 
 .pricing-card-featured {
     border-color: var(--border-accent);
-    background: linear-gradient(180deg, rgba(201, 162, 39, 0.05) 0%, var(--bg-card) 100%);
+    background: linear-gradient(180deg, rgba(201, 162, 39, 0.08) 0%, var(--bg-card) 100%);
     transform: scale(1.02);
 }
 
 .pricing-card-featured::before {
     opacity: 1;
+}
+
+.pricing-card-featured::after {
+    content: 'RECOMMENDED';
+    position: absolute;
+    top: 22px;
+    right: -34px;
+    background: linear-gradient(135deg, var(--accent-light), var(--accent));
+    color: #0e0e0e;
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 6px 40px;
+    transform: rotate(40deg);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
 }
 
 .pricing-card-featured:hover {
@@ -1168,7 +1202,7 @@ a:hover {
 
 .pricing-features li {
     position: relative;
-    padding-left: 20px;
+    padding-left: 24px;
     padding-bottom: 14px;
     color: var(--text-secondary);
     font-size: 0.85rem;
@@ -1177,14 +1211,13 @@ a:hover {
 }
 
 .pricing-features li::before {
-    content: '';
+    content: '✓';
     position: absolute;
     left: 0;
-    top: 7px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--accent);
+    top: 0;
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 700;
 }
 
 .pricing-best-for {
@@ -1781,6 +1814,24 @@ a:hover {
     .pricing-card-header h3 {
         font-size: 1.1rem;
         margin-bottom: 12px;
+    }
+
+    .pricing-card-icon {
+        width: 42px;
+        height: 42px;
+        margin-bottom: 14px;
+    }
+
+    .pricing-card-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .pricing-card-featured::after {
+        top: 16px;
+        right: -30px;
+        font-size: 0.56rem;
+        padding: 4px 34px;
     }
 
     .price-amount {
