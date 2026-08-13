@@ -58,6 +58,7 @@ img, svg, video {
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 [id] {
@@ -257,6 +258,7 @@ a:hover {
     justify-content: center;
     padding: 120px 0 80px;
     text-align: center;
+    overflow: hidden;
 }
 
 .hero-glow {
@@ -808,6 +810,11 @@ a:hover {
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     align-items: start;
+}
+
+.contact-info,
+.contact-form-wrapper {
+    min-width: 0;
 }
 
 .contact-info h2 {
