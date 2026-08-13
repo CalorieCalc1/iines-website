@@ -1130,15 +1130,15 @@ a:hover {
 .pricing-card-featured::after {
     content: 'RECOMMENDED';
     position: absolute;
-    top: 22px;
-    right: -34px;
+    top: 24px;
+    right: 24px;
     background: linear-gradient(135deg, var(--accent-light), var(--accent));
     color: #0e0e0e;
     font-size: 0.62rem;
     font-weight: 700;
-    letter-spacing: 0.1em;
-    padding: 6px 40px;
-    transform: rotate(40deg);
+    letter-spacing: 0.08em;
+    padding: 5px 12px;
+    border-radius: 20px;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
 }
 
@@ -1829,9 +1829,9 @@ a:hover {
 
     .pricing-card-featured::after {
         top: 16px;
-        right: -30px;
+        right: 16px;
         font-size: 0.56rem;
-        padding: 4px 34px;
+        padding: 4px 10px;
     }
 
     .price-amount {
